@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Dumbbell, Flame, Activity, CheckCircle2, MapPin, Phone, Mail, Menu, X, ArrowRight } from 'lucide-react';
+import logoImg from './assets/logo_mmf.jpg';
+import heroImg from './assets/mmf.webp';
 
 export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,7 +47,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-3">
-              <img src="/logo_mmf.jpg" alt="Muscle Mind Factory Logo" className="h-12 w-12 object-cover rounded shadow-lg border border-zinc-800" />
+              <img src={logoImg} alt="Muscle Mind Factory Logo" className="h-12 w-12 object-cover rounded shadow-lg border border-zinc-800" />
               <span className="font-display text-2xl font-black uppercase tracking-tighter sm:text-3xl">
                 Muscle Mind <span className="text-yellow-500">Factory</span>
               </span>
@@ -100,7 +102,7 @@ export default function App() {
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-transparent z-10" />
           <div className="absolute inset-0 bg-black/40 z-10" />
-          <img src="/mmf.webp" alt="Heavy Gym Background" className="w-full h-full object-cover object-center scale-105" />
+          <img src={heroImg} alt="Heavy Gym Background" className="w-full h-full object-cover object-center scale-105" />
         </div>
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
@@ -132,7 +134,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-yellow-600 blur opacity-20"></div>
-              <img src="/mmf.webp" alt="Equipment" className="relative w-full h-[500px] object-cover rounded-sm grayscale contrast-125 border border-zinc-800" />
+              <img src={heroImg} alt="Equipment" className="relative w-full h-[500px] object-cover rounded-sm grayscale contrast-125 border border-zinc-800" />
               <div className="absolute bottom-4 -right-4 bg-zinc-900 border border-zinc-800 p-4 shadow-2xl flex items-center gap-4">
                 <Dumbbell className="text-yellow-500 w-10 h-10" />
                 <div>
@@ -323,7 +325,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <img src="/logo_mmf.jpg" alt="Muscle Mind Factory" className="h-10 w-10 object-cover rounded shadow" />
+                <img src={logoImg} alt="Muscle Mind Factory" className="h-10 w-10 object-cover rounded shadow" />
                 <span className="font-display text-2xl font-black uppercase tracking-tighter">
                   Muscle Mind <span className="text-yellow-500">Factory</span>
                 </span>
