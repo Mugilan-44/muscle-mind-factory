@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000000;
+  --color-zinc-950: #09090b;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-600: #52525b;
+  --color-zinc-500: #71717a;
+  --color-yellow-500: #eab308;
+  --color-yellow-400: #facc15;
+  --color-yellow-600: #ca8a04;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Oswald', 'Impact', sans-serif;
+}
+
+@layer utilities {
+  .glow-yellow {
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
+  }
+  .glow-yellow-hover:hover {
+    box-shadow: 0 0 25px rgba(234, 179, 8, 0.8);
+  }
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  }
+  .hazard-stripes {
+    background: repeating-linear-gradient(
+      -45deg,
+      #18181b,
+      #18181b 10px,
+      #27272a 10px,
+      #27272a 20px
+    );
+  }
+}
+
+body {
+  background-color: var(--color-zinc-950);
+  color: #ffffff;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
